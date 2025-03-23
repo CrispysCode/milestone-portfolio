@@ -4,3 +4,34 @@
   box-sizing: border-box;
   font-size: 16px;
 }
+
+header {
+  display: flex;
+  padding: 44px;
+  background-color: grey;
+}
+
+.img img {
+  height: 650px;
+  min-width: 100%;
+  object-fit: cover;
+  border-radius: 50px;
+}
+
+.about {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 50px 0px;
+  padding: 48px 22px;
+  border-radius: 15px;
+}
+
+.about h2 {
+  font-size: 3.5rem;
+}
+
+.about p {
+  font-size: 1.5rem;
+}
