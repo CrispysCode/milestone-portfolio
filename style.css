@@ -37,7 +37,7 @@ header {
 }
 
 .github, .linkedin {
-  min-width: 50px;
+  width: 50px;
 }
 
 .icons {
@@ -45,6 +45,43 @@ header {
   display: flex;
   gap: 32px;
   margin-top: auto;
+}
+
+/*Main Section */
+main {
+  padding: 44px;
+}
+
+main h2 {
+  font-size: 2rem;
+}
+
+.container {
+  display: flex;
+  margin: 12px 0;
+  gap: 44px;
+  flex-wrap: wrap;
+  
+}
+
+.item {
+  flex: 0 1 calc(33.333% - 44px);
+  display: flex;
+  flex-direction: column;
+  max-width: calc(33.333% - 44px);
+  border: 1px solid black;
+}
+
+.item p {
+  padding: 24px 12px;
+}
+
+.item-content {
+  display: flex;
+}
+
+.container .github, .container .linkedin {
+  width: 25px;
 }
 
 @media (max-width: 1160px) {
