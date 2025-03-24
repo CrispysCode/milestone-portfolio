@@ -13,20 +13,18 @@ header {
 }
 
 .img img {
-  height: 80vh;
+  max-height: 80vh;
   /* min-width: 100%; */
   object-fit: cover;
-  border-radius: 50px;
 }
 
 .about {
   background-color: white;
+  justify-content: center;
   display: flex;
   flex-direction: column;
-  gap: 15px;
-  margin: 50px auto;
-  padding: 48px 42px;
-  border-radius: 15px;
+  margin: 35px 0;
+  padding: 30px;
   /* height: 75vh; */
 }
 
@@ -39,11 +37,16 @@ header {
 }
 
 .github, .linkedin {
-  min-width: 55px;
+  min-width: 50px;
 }
 
 .icons {
   align-self: flex-end;
   display: flex;
   gap: 32px;
+  margin-top: auto;
+}
+
+@media (max-width: 1160px) {
+
 }
