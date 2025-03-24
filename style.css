@@ -9,11 +9,12 @@ header {
   display: flex;
   padding: 44px;
   background-color: grey;
+
 }
 
 .img img {
-  height: 650px;
-  min-width: 100%;
+  height: 80vh;
+  /* min-width: 100%; */
   object-fit: cover;
   border-radius: 50px;
 }
@@ -23,15 +24,26 @@ header {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  margin: 50px 0px;
-  padding: 48px 22px;
+  margin: 50px auto;
+  padding: 48px 42px;
   border-radius: 15px;
+  /* height: 75vh; */
 }
 
 .about h2 {
-  font-size: 3.5rem;
+  font-size: 3rem;
 }
 
 .about p {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
+}
+
+.github, .linkedin {
+  min-width: 55px;
+}
+
+.icons {
+  align-self: flex-end;
+  display: flex;
+  gap: 32px;
 }
