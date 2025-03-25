@@ -16,7 +16,6 @@ header {
   flex: 1;
 }
 .img img {
-  /* max-height: 80vh; */
   max-width: 100%;
   object-fit: cover;
 }
@@ -37,7 +36,6 @@ header {
   flex-direction: column;
   margin: 35px 0;
   padding: 30px;
-  /* height: 75vh; */
 }
 
 .about h2 {
@@ -96,12 +94,26 @@ main h2 {
   width: 25px;
 }
 
+/* Project Cards */
+
+.project {
+  font-size: 3rem;
+  padding: 64px;
+  border: 1px solid black;
+  text-align: center; 
+}
+
+.project p {
+  font-size: 3rem;
+}
+
 /* Footer Section */
 
 footer {
   display: flex;
   padding: 0 44px;
-  gap: 32px;
+  padding-bottom: 44px;
+  gap: 48px;
   justify-content: space-between;
 }
 
@@ -109,12 +121,25 @@ footer {
   font-size: 3.5rem;
   padding-bottom: 18px;
 }
-
 .left p {
   font-size: 1.5rem;
   padding-bottom: 42px;
 }
+.right {
+  width: 100%;
+  height: auto; 
+  aspect-ratio: 16 / 9; 
+  overflow: hidden;
+}
 
-@media (max-width: 1160px) {
+.right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+
+@media (max-width: 1320px) {
 
 }
