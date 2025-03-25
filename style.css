@@ -82,13 +82,7 @@ main h2 {
   border: 1px solid black;
 }
 
-.item p {
-  padding: 24px 12px;
-}
 
-.item-content {
-  display: flex;
-}
 
 .container .github, .container .linkedin {
   width: 25px;
@@ -103,10 +97,29 @@ main h2 {
   text-align: center; 
 }
 
-.project p {
+.screenshot {
   font-size: 3rem;
 }
 
+.item-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 18px;
+}
+
+.item-title h3 {
+  font-size: 2rem;
+}
+
+.item-icons {
+ display: flex;
+ gap: 18px;
+}
+
+.description {
+  font-size: 1.25rem;
+  padding: 6px 18px 72px 18px;
+}
 /* Footer Section */
 
 footer {
