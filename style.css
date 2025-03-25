@@ -29,11 +29,11 @@ header {
 }
 
 .about h2 {
-  font-size: 3rem;
+  font-size: 4.5rem;
 }
 
 .about p {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 }
 
 .github, .linkedin {
@@ -61,6 +61,7 @@ main h2 {
   margin: 12px 0;
   gap: 44px;
   flex-wrap: wrap;
+  justify-content: space-between;
   
 }
 
@@ -83,6 +84,8 @@ main h2 {
 .container .github, .container .linkedin {
   width: 25px;
 }
+
+/* Footer Section */
 
 @media (max-width: 1160px) {
 
