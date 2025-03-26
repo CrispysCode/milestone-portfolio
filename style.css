@@ -5,11 +5,13 @@
   font-size: 16px;
 }
 
+body {
+  background-color: rgb(230, 229, 229);
+}
+
 header {
   display: flex;
   padding: 44px;
-  background-color: grey;
-
 }
 .img {
   position: relative;
@@ -39,12 +41,12 @@ header {
 }
 
 .about h2 {
-  font-size: 4.5rem;
+  font-size: 3.5rem;
   font-family: "Lilita One", sans-serif;
 }
 
 .about p {
-  font-size: 1.5rem;
+  font-size: 24px;
   font-family: "Winky Sans", sans-serif;
 }
 
@@ -67,6 +69,7 @@ main {
 main h2 {
   font-size: 3rem;
   font-family: "Lilita One", sans-serif;
+  text-align: left;
 }
 
 .container {
@@ -94,14 +97,15 @@ main h2 {
 /* Project Cards */
 
 .project {
-  font-size: 3rem;
-  padding: 64px;
+  
+  /* padding: 64px; */
   border: 1px solid black;
   text-align: center; 
 }
 
 .screenshot {
-  font-size: 3rem;
+  padding: 48px 24px;
+  font-size: 2.5rem;
 }
 
 .item-content {
@@ -117,7 +121,7 @@ main h2 {
 
 .item-icons {
  display: flex;
- gap: 18px;
+ gap: 12px;
 }
 
 .description {
@@ -159,7 +163,90 @@ footer {
   object-position: center center;
 }
 
+.tablet {
+  display: none;
+}
 
-@media (max-width: 1320px) {
+
+@media (max-width: 1160px) {
+  div.img {
+    display: none
+  }
+
+  .icons.heading {
+    display: none;
+  }
+  .tablet {
+    display: block;
+    position: relative; 
+    width: 425px;
+    height: 475px;
+    top: -52px;
+    float: left;
+    left: -32px;
+  }
+
+  .about {
+    /* position: absolute; */
+      /* flex: 2; */
+      background-color: white;
+      justify-content: center;
+      display: block;
+      margin: 0px 0px;
+      padding: 0px;
+      height: 485px;
+    
+  }
+
+  .about h2 {
+    padding-top: 120px;
+    text-align: center;
+  }
+
+  .about p {
+
+  }
+
+   header {
+    display: block;
+    margin: 42px;
+  }
+/*
+  .tablet-container {
+    display: block;
+    height: 450px;
+  margin: 44px;
+    border: 1px solid black; 
+  }
+
+  .tablet-about {
+    border: 1px solid black;
+    position: relative;
+    margin-top: 24px;
+    background-color: white;
+    z-index: -1;
+  }
+  .tablet-image {
+    width: 400px;
+    float: left;
+    position: relative;
+    top: -20px;
+    left: -20px
+  }
+
+  .article-title {
+    font-size: 3.5rem;
+    margin-top: 42px;
+    padding-top: 42px;
+    margin-left: 12px;
+    font-family: "Lilita One", sans-serif;
+    text-align: center;
+  }
+
+  .tablet-about p {
+    font-size: 1.75rem;
+    font-family: "Winky Sans", sans-serif;
+  } */
+
 
 }
