@@ -70,35 +70,24 @@ main h2 {
   font-size: 3rem;
   font-family: "Lilita One", sans-serif;
   text-align: left;
+  margin-bottom: 24px;
 }
 
 .container {
-  display: flex;
-  margin: 12px 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 44px;
-  flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 .item {
-  flex: 0 1 calc(33.333% - 44px);
   display: flex;
   flex-direction: column;
-  max-width: calc(33.333% - 44px);
   border: 1px solid black;
+  /* Optional: add some box-shadow for depth */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
-
-
-
-.container .github, .container .linkedin {
-  width: 25px;
-}
-
-/* Project Cards */
 
 .project {
-  
-  /* padding: 64px; */
   border: 1px solid black;
   text-align: center; 
 }
@@ -112,6 +101,7 @@ main h2 {
   display: flex;
   justify-content: space-between;
   padding: 12px 18px;
+  align-items: center;
 }
 
 .item-title h3 {
@@ -120,14 +110,36 @@ main h2 {
 }
 
 .item-icons {
- display: flex;
- gap: 12px;
+  display: flex;
+  gap: 12px;
+}
+
+.container .github, 
+.container .linkedin {
+  max-width: 25px;
 }
 
 .description {
   font-size: 1.25rem;
   padding: 6px 18px 72px 18px;
   font-family: "Winky Sans", sans-serif;
+  flex-grow: 1; /* This helps to push the description to the bottom */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  main {
+    padding: 20px;
+  }
+
+  .container {
+    gap: 24px;
+  }
+
+  main h2 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
 }
 /* Footer Section */
 
@@ -168,7 +180,7 @@ footer {
 }
 
 
-@media (max-width: 1160px) {
+ @media (max-width: 1160px) {
   div.img {
     display: none
   }
@@ -179,9 +191,9 @@ footer {
   .tablet {
     display: block;
     position: relative; 
-    width: 425px;
+    max-width: 425px;
     height: 475px;
-    top: -52px;
+    top: -32px;
     float: left;
     left: -32px;
   }
@@ -192,61 +204,31 @@ footer {
       background-color: white;
       justify-content: center;
       display: block;
-      margin: 0px 0px;
-      padding: 0px;
-      height: 485px;
+      min-height: 520px;
+      padding-top: 0px;
+      /* height: 485px; */
+      padding-right: 24px;
     
   }
 
   .about h2 {
     padding-top: 120px;
     text-align: center;
+    margin-bottom: 84px;
   }
 
   .about p {
-
+    text-align: justify;
+    position: relative;
+    top: -34px;
   }
 
+  
    header {
     display: block;
-    margin: 42px;
-  }
-/*
-  .tablet-container {
-    display: block;
-    height: 450px;
-  margin: 44px;
-    border: 1px solid black; 
+    /* margin: 42px; */
   }
 
-  .tablet-about {
-    border: 1px solid black;
-    position: relative;
-    margin-top: 24px;
-    background-color: white;
-    z-index: -1;
-  }
-  .tablet-image {
-    width: 400px;
-    float: left;
-    position: relative;
-    top: -20px;
-    left: -20px
-  }
-
-  .article-title {
-    font-size: 3.5rem;
-    margin-top: 42px;
-    padding-top: 42px;
-    margin-left: 12px;
-    font-family: "Lilita One", sans-serif;
-    text-align: center;
-  }
-
-  .tablet-about p {
-    font-size: 1.75rem;
-    font-family: "Winky Sans", sans-serif;
-  } */
 
 
-}
+} 
