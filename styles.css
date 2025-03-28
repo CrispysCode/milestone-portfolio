@@ -53,19 +53,18 @@ article p {
   padding-top: 64px;
   margin-right: 12px;
   position: relative;
-  
 }
 .github {
   max-width: 45px;
   justify-content: flex-end;
 }
 
-.item-github, .item-linkedin {
+.item-github,
+.item-linkedin {
   width: 25px;
-
 }
 
-/* Main Styles */ 
+/* Main Styles */
 
 main {
   padding: 0px 74px 74px 74px;
@@ -86,9 +85,9 @@ main h2 {
 }
 
 .item {
- border: 2px solid black;
- display: flex;
- flex-direction: column;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
 }
 
 .item-content {
@@ -100,10 +99,9 @@ main h2 {
 }
 
 .item-content h3 {
- font-size: 24px;
- font-family: "Lilita One", sans-serif;
+  font-size: 24px;
+  font-family: "Lilita One", sans-serif;
 }
-
 
 .item-icons {
   display: flex;
@@ -128,7 +126,7 @@ main h2 {
 footer {
   display: flex;
   margin: 44px 74px 44px 74px;
-  
+
   gap: 22px;
   justify-content: space-between;
 }
@@ -145,9 +143,8 @@ footer {
 }
 .right {
   width: 100%;
-  height: auto; 
+  height: auto;
   /* aspect-ratio: 16 / 9;  */
-  
 }
 
 .right img {
@@ -175,7 +172,6 @@ footer {
 
 /* TABLET STYLES */
 
-
 @media (max-width: 900px) {
   /*Header*/
   .image-header {
@@ -185,7 +181,6 @@ footer {
     left: -50px;
     margin-bottom: -66px;
     margin-right: -35px;
-    
   }
 
   .container {
@@ -195,7 +190,6 @@ footer {
   .icons {
     display: none;
   }
-
 
   article {
     min-height: 320px;
@@ -212,30 +206,30 @@ footer {
   }
 
   /*Main*/
-.main-container {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  grid-template-rows: repeat(3, auto);
-}
+  .main-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: repeat(3, auto);
+  }
 
-/*Footer*/
+  /*Footer*/
 
-.left h3 {
-  padding-bottom: 6px;
-  font-size: 2.5rem;
-}
+  .left h3 {
+    padding-bottom: 6px;
+    font-size: 2.5rem;
+  }
 
-.left p {
-  padding-bottom: 12px;
-  font-size: 1.25rem;
-}
+  .left p {
+    padding-bottom: 12px;
+    font-size: 1.25rem;
+  }
 
-.right img {
-  height: 100%;
-  object-fit: cover;
-  object-position: right;
-}
+  .right img {
+    height: 100%;
+    object-fit: cover;
+    object-position: right;
+  }
 
-.tabletIcon {
-  width: 30px;
-}
+  .tabletIcon {
+    width: 30px;
+  }
 }
